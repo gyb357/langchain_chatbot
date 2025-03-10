@@ -31,6 +31,7 @@ pip install -r requirements.txt
 
 # Project Structure
 
+```bash
 langchain_chatbot
 ├── vectorstore/
 │   └── vector_db.py            # Vector store related code
@@ -38,6 +39,7 @@ langchain_chatbot
 │   └── config.yaml             # Configuration file
 ├── requirements.txt            # Dependency package list
 └── README.md                   # Project documentation
+```
 
 
 
