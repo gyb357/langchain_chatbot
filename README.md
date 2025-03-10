@@ -57,6 +57,8 @@ RAG-LangChain is an advanced AI framework that combines Retrieval-Augmented Gene
 
  > [!Note]
  > Based on relatively lightweight models ranging in size from 1B to 5B. Larger models will require more RAM and a high-performance GPU.
+ 
+ > [!Important]
  > You must ensure that the GPU is properly assigned as a processor.
 
 ## 2. Libraries and Dependencies
