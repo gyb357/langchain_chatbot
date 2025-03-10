@@ -17,7 +17,7 @@ This repository implements a RAG (Retrieval-Augmented Generation) based chatbot 
 
 
 
-## Getting Started
+# Getting Started
 
 To get started, clone the repository and install the required dependencies:
 
@@ -25,6 +25,19 @@ To get started, clone the repository and install the required dependencies:
 git clone https://github.com/gyb357/langchain_chatbot
 pip install -r requirements.txt
 ```
+
+
+
+
+# Project Structure
+
+langchain_chatbot
+├── vectorstore/
+│   └── vector_db.py            # Vector store related code
+├── config/
+│   └── config.yaml             # Configuration file
+├── requirements.txt            # Dependency package list
+└── README.md                   # Project documentation
 
 
 
