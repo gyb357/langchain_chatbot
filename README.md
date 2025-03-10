@@ -61,7 +61,7 @@ To run this RAG system locally, embedding models and large language models (LLMs
 
 
 ## Managing Models in config.yaml
- >> Inside ```config/config.yaml```, specify the embedding model and LLM model as follows:
+ > Inside ```config/config.yaml```, specify the embedding model and LLM model as follows:
 ```yaml
 embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
 llm_model: "mistralai/Mistral-7B-Instruct-v0.1"
