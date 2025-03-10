@@ -5,7 +5,9 @@ This repository implements a RAG (Retrieval-Augmented Generation) based chatbot 
 
 ![rag_image_0](images/rag_image_0.png)
 
+![rag_image_1](images/rag_image_1.png)
 
+#### (images from https://python.langchain.com/docs/tutorials/rag/)
 
 
 ## Key Features
@@ -15,10 +17,6 @@ This repository implements a RAG (Retrieval-Augmented Generation) based chatbot 
  - Implement RAG-based question answering system
  - Configure LLM prompt chains using LangChain
  - Interactive web interface with Streamlit
-
-![rag_image_1](images/rag_image_1.png)
-
-#### (images from https://python.langchain.com/docs/tutorials/rag/)
 
 
 
