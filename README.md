@@ -1,26 +1,3 @@
-# Table of Contents
-1. **[Introduction](#Introduction)**
-    * Document-Based RAG-LangChain Chatbot
-    * Purpose of the Project
-
-2. **[Key Features](#Key-Features)**
-
-3. **[RAG Description](#RAG-Description)**
-     * What is RAG-LangChain?
-     * How RAG Works
-
-4. **[Getting Started](#Getting-Started)**
-     * 1. Check the Running Environment
-     * 2. Libraries and Dependencies
-     * 3. Download LLMs and Managing Configuration
-     * 4. Launching the Web Interface with Streamlit
-
-5. **[Project Structure](#Project-Structure)**
-
-
-*****
-
-
 # 📑Introduction
 
 ## Document-Based RAG-LangChain Chatbot
