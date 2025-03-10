@@ -1,6 +1,6 @@
-## Introduction
+# Introduction
 
-# Document-based RAG-LangChain Chatbot
+## Document-based RAG-LangChain Chatbot
 This repository implements a RAG (Retrieval-Augmented Generation) based chatbot system that reads and processes various document formats such as PDF, TXT, and CSV to answer questions. It leverages the LangChain framework for document processing, vector store integration, and large language model integration.
 
 
