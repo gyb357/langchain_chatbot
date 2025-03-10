@@ -59,12 +59,13 @@ RAG-LangChain is an advanced AI framework that combines Retrieval-Augmented Gene
 
 1. First, documents are processed, chunked, and converted into vector embeddings using embedding models. These vectors capture the semantic meaning of text.
 2. When a user asks a question, the system converts the question into the same vector space and retrieves the most relevant document chunks based on semantic similarity.
-3. The retrieved context is then "augmented" to the user's query as additional context for the language model.
-4. Finally, the large language model (LLM) generates a response based on both the user's question and the retrieved document context.
 
 ![rag_image_1](images/rag_image_1.png)
 
-(images from https://python.langchain.com/docs/tutorials/rag/)
+3. The retrieved context is then "augmented" to the user's query as additional context for the language model.
+4. Finally, the large language model (LLM) generates a response based on both the user's question and the retrieved document context.
+
+ > (images from https://python.langchain.com/docs/tutorials/rag/)
 
 
 *****
@@ -86,11 +87,15 @@ git clone https://github.com/gyb357/langchain_chatbot
 pip install -r requirements.txt
 ```
 
+ > [!Note]
+ > You must ensure that the GPU is properly assigned as a processor.
+
 ## 3. Download LLMs and Managing Configuration
 Access Huggingface to download models and browse for the right model for your task.
  > 🤗 Huggingface: https://huggingface.co/models
 
 This RAG system is local, and the embedding model and the large-scale language model (LLM) are managed through `config.yaml`. Instead of manually specifying the models in your code, you can define their names in the configuration file.
+
 For example, within `config/config.yaml`, specify the embedding model and LLM model as follows:
 
 ```yaml
@@ -106,6 +111,7 @@ streamlit run app.py
 ```
 
 After running this command, the application will be available at `http://localhost:8501` by default. You can access the interface through your web browser.
+
 If you're trying a different port number, follow the instructions below:
 
 ```bash
