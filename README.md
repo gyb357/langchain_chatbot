@@ -1,15 +1,7 @@
-<style>
-.toc-indent {
-    color: blue;
-    font-weight: bold;
-}
-</style>
-
-
 # Table of Contents
-1. **[Introduction](#1-Introduction)**
-<span class="toc-indent"> - Document-based RAG-LangChain Chatbot </span>
-<span class="toc-indent"> - Purpose of the project </span>
+1. [Introduction](#1-Introduction)
+> - Document-based RAG-LangChain Chatbot
+> - Purpose of the project
 
 2. [RAG Description](#2-RAG-Description)
 > - What is RAG?
