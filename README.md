@@ -1,7 +1,47 @@
+# Table of Contents
+1. [Introduction](#1-Introduction)
+ - Document-based RAG-LangChain Chatbot
+ - Purpose
+
+2. [RAG Description](#2-RAG-Description)
+ - What is RAG?
+ - How RAG Works
+ - 
+
+3. [Getting Started](#3-Getting-Started)
+ - Running Environment
+ - Libraries and Dependencies
+ - Downloading Embedding and LLM Models
+ - Managing config
+
+4. [Project Structure](#3-Project-Structure)
+
+*****
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Introduction
 
 ## 📑 Document-based RAG-LangChain Chatbot
 This repository implements a RAG (Retrieval-Augmented Generation) based chatbot system that runs entirely in a local environment. It processes various document formats such as PDF, TXT, and CSV to answer questions using the LangChain framework and provides an intuitive interface through Streamlit. The system is designed to work without relying on external services, making it suitable for private or sensitive data applications.
+
+## Purpose
+This repository was created to test the simple techniques involved in implementing Ganlangchain and RAG in a local environment.
 
 
 
