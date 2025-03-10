@@ -1,12 +1,12 @@
 # Introduction
 
-## Document-based RAG-LangChain Chatbot
-This repository implements a RAG (Retrieval-Augmented Generation) based chatbot system that runs entirely in a local environment. It processes various document formats such as PDF, TXT, and CSV to answer questions using LangChain framework and provides an intuitive interface through Streamlit. The system is designed to work without relying on external services, making it suitable for private or sensitive data applications.
+## 📑 Document-based RAG-LangChain Chatbot
+This repository implements a RAG (Retrieval-Augmented Generation) based chatbot system that runs entirely in a local environment. It processes various document formats such as PDF, TXT, and CSV to answer questions using the LangChain framework and provides an intuitive interface through Streamlit. The system is designed to work without relying on external services, making it suitable for private or sensitive data applications.
 
 
 
 
-## What is RAG?
+## 💡 What is RAG?
 RAG is a hybrid AI framework that combines the power of retrieval systems with generative language models to create more accurate, reliable, and contextually relevant responses.
 
 ![rag_image_0](images/rag_image_0.png)
@@ -24,13 +24,13 @@ RAG is a hybrid AI framework that combines the power of retrieval systems with g
 
 
 
-## Key Features
-
+## ✨ Key Features
  - Process and extract data from various document formats (PDF, TXT, CSV)
  - Build efficient search indices through document chunking and vectorization
  - Implement RAG-based question answering system
  - Configure LLM prompt chains using LangChain
  - Interactive web interface with Streamlit
+ - Download and use embedding models and LLMs from Hugging Face
 
 
 
@@ -42,12 +42,39 @@ RAG is a hybrid AI framework that combines the power of retrieval systems with g
  - 16GB+ RAM recommended (32GB+ for larger models)
  - GPU acceleration (optional but recommended for performance)
 
-## Clone the repository and install the required dependencies:
 
+
+
+## Clone the repository and install the required dependencies:
 ```bash
 git clone https://github.com/gyb357/langchain_chatbot
 pip install -r requirements.txt
 ```
+
+
+
+
+## Downloading Embedding Models and LLMs from Hugging Face
+To run this RAG system locally, embedding models and large language models (LLMs) are managed via config.yaml. Instead of manually specifying models in the code, you can define their names in the configuration file. This allows for flexible model switching without modifying the source code.
+
+
+
+
+## Managing Models in config.yaml
+ >> Inside ```config/config.yaml```, specify the embedding model and LLM model as follows:
+```yaml
+embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+llm_model: "mistralai/Mistral-7B-Instruct-v0.1"
+```
+
+For other models, check Hugging Face Model Hub and replace model_name accordingly.
+
+🤗 Huggingface site: https://huggingface.co/models
+
+You can set a variety of other fine-grained settings in config.yaml.
+
+
+
 
 ## Launching the Web Interface with Streamlit
 This is includes a Streamlit application for a user-friendly interface to interact with the RAG system.
