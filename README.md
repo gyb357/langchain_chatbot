@@ -10,11 +10,10 @@
      * How RAG Works
 
 4. **[Getting Started](#Getting-Started)**
-     * Running Environment
-     * Libraries and Dependencies
-     * Download the embedding models and LLMs
-     * Managing Configuration
-     * Launching the Web Interface with Streamlit
+     * 1. Check the Running Environment
+     * 2. Libraries and Dependencies
+     * 3. Download LLMs and Managing Configuration
+     * 4. Launching the Web Interface with Streamlit
 
 5. **[Project Structure](#Project-Structure)**
 
@@ -30,8 +29,8 @@ This repository implements a Retrieval-Augmented Generation (RAG) based chatbot 
 ## Purpose of the Project
 This repository is focused on implementing LangChain and RAG in your local environment and testing simple techniques related to it.
 
-**Note**
-Testing will be done primarily on the dev branch, and if it's stable, it will be merged to the master branch. 
+ > **Note**
+ > Testing will be done primarily on the dev branch, and if it's stable, it will be merged to the master branch. 
 
 
 *****
@@ -73,35 +72,33 @@ RAG-LangChain is an advanced AI framework that combines Retrieval-Augmented Gene
 
 # 🔨Getting Started
 
-## Running Environment
+## 1. Check the Running Environment
  * 16GB ~ 32GB RAM recommended (32GB+ for larger models)
  * GPU acceleration (optional but recommended for performance)
  * Python 3.11+
 
-**Note**
-Based on relatively lightweight models ranging in size from 1B to 5B. Larger models will require more RAM and a high-performance GPU.
+ > **Note**
+ > Based on relatively lightweight models ranging in size from 1B to 5B. Larger models will require more RAM and a high-performance GPU.
 
-## Libraries and Dependencies
+## 2. Libraries and Dependencies
 ```bash
 git clone https://github.com/gyb357/langchain_chatbot
 pip install -r requirements.txt
 ```
 
-## Download the embedding models and LLMs
-To run this RAG system locally, embedding models and large language models (LLMs) are managed via config.yaml. Instead of manually specifying models in the code, you can define their names in the configuration file. This allows for flexible model switching without modifying the source code.
+## 3. Download LLMs and Managing Configuration
+Access Huggingface to download models and browse for the right model for your task.
+ > 🤗 Huggingface: https://huggingface.co/models
 
-## Managing Configuration
- > Inside `config/config.yaml`, specify the embedding model and LLM model as follows:
+This RAG system is local, and the embedding model and the large-scale language model (LLM) are managed through `config.yaml`. Instead of manually specifying the models in your code, you can define their names in the configuration file.
+ > For example, within `config/config.yaml`, specify the embedding model and LLM model as follows:
 
 ```yaml
 embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
 llm_model: "mistralai/Mistral-7B-Instruct-v0.1"
 ```
 
-For other models, check Hugging Face Model Hub and replace model name accordingly.
- > 🤗 Huggingface: https://huggingface.co/models
-
-## Launching the Web Interface with Streamlit
+## 4. Launching the Web Interface with Streamlit
 To run streamlit, enter the command below to run it:
 
 ```bash
@@ -109,7 +106,7 @@ streamlit run app.py
 ```
 
 After running this command, the application will be available at `http://localhost:8501` by default. You can access the interface through your web browser.
-he port numbering is as follows:
+If you're trying a different port number, follow the instructions below:
 
 ```bash
 streamlit run [app.py] [--server.port 'Port number you want']
