@@ -29,8 +29,8 @@ This repository implements a Retrieval-Augmented Generation (RAG) based chatbot 
 ## Purpose of the Project
 This repository is focused on implementing LangChain and RAG in your local environment and testing simple techniques related to it.
 
- > **Note**
- > Testing will be done primarily on the dev branch, and if it's stable, it will be merged to the master branch. 
+ > [!Note]
+ > Testing will be done primarily on the dev branch, and if it's stable, it will be merged to the master branch.
 
 
 *****
@@ -77,7 +77,7 @@ RAG-LangChain is an advanced AI framework that combines Retrieval-Augmented Gene
  * GPU acceleration (optional but recommended for performance)
  * Python 3.11+
 
- > **Note**
+ > [!Note]
  > Based on relatively lightweight models ranging in size from 1B to 5B. Larger models will require more RAM and a high-performance GPU.
 
 ## 2. Libraries and Dependencies
@@ -91,7 +91,7 @@ Access Huggingface to download models and browse for the right model for your ta
  > 🤗 Huggingface: https://huggingface.co/models
 
 This RAG system is local, and the embedding model and the large-scale language model (LLM) are managed through `config.yaml`. Instead of manually specifying the models in your code, you can define their names in the configuration file.
- > For example, within `config/config.yaml`, specify the embedding model and LLM model as follows:
+For example, within `config/config.yaml`, specify the embedding model and LLM model as follows:
 
 ```yaml
 embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
