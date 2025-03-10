@@ -12,14 +12,14 @@ RAG is a hybrid AI framework that combines the power of retrieval systems with g
 ![rag_image_0](images/rag_image_0.png)
 
 ## How RAG Works:
- - **Document** Indexing: First, documents are processed, chunked, and converted into vector embeddings using embedding models. These vectors capture the semantic meaning of text.
+ - **Document Indexing**: First, documents are processed, chunked, and converted into vector embeddings using embedding models. These vectors capture the semantic meaning of text.
  - **Retrieval**: When a user asks a question, the system converts the question into the same vector space and retrieves the most relevant document chunks based on semantic similarity.
  - **Augmentation**: The retrieved context is then "augmented" to the user's query as additional context for the language model.
  - **Generation**: Finally, the large language model (LLM) generates a response based on both the user's question and the retrieved document context.
 
 ![rag_image_1](images/rag_image_1.png)
 
-#### (images from https://python.langchain.com/docs/tutorials/rag/)
+(images from https://python.langchain.com/docs/tutorials/rag/)
 
 
 
