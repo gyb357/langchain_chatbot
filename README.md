@@ -3,6 +3,8 @@
 ## Document-based RAG-LangChain Chatbot
 This repository implements a RAG (Retrieval-Augmented Generation) based chatbot system that runs entirely in a local environment. It processes various document formats such as PDF, TXT, and CSV to answer questions using LangChain framework and provides an intuitive interface through Streamlit. The system is designed to work without relying on external services, making it suitable for private or sensitive data applications.
 
+![rag_image_0](images/rag_image_0.png)
+
 
 
 
@@ -13,6 +15,10 @@ This repository implements a RAG (Retrieval-Augmented Generation) based chatbot 
  - Implement RAG-based question answering system
  - Configure LLM prompt chains using LangChain
  - Interactive web interface with Streamlit
+
+![rag_image_1](images/rag_image_1.png)
+
+#### (images from https://python.langchain.com/docs/tutorials/rag/)
 
 
 
