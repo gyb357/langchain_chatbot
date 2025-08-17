@@ -1,0 +1,12 @@
+torch
+transformers
+langchain_community
+chromadb
+langchain-chroma
+sentence-transformers
+pypdf
+docx2txt
+langchain-text-splitters
+faiss-cpu
+streamlit
+ipykernel
