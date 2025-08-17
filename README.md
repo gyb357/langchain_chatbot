@@ -15,12 +15,10 @@ RAG-LangChain is a practical framework that combines Retrieval-Augmented Generat
 ## How RAG Works
 
 ![rag_image_0](assets/rag_image_0.png)
+![rag_image_1](assets/rag_image_1.png)
 
 1. Documents are preprocessed, chunked, and embedded with an embedding model. The resulting vectors capture the semantic meaning of the text.
 2. When a user asks a question, the question is embedded into the same vector space and the most relevant chunks are retrieved by semantic similarity.
-
-![rag_image_1](assets/rag_image_1.png)
-
 3. The retrieved passages are appended to the prompt, augmenting the user’s query with additional context for the model.
 4. The large language model (LLM) then generates a response grounded in both the user’s question and the retrieved context.
 
