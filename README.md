@@ -14,12 +14,12 @@ RAG-LangChain is a practical framework that combines Retrieval-Augmented Generat
 
 ## How RAG Works
 
-![rag_image_0](images/rag_image_0.png)
+![rag_image_0](assets/rag_image_0.png)
 
 1. Documents are preprocessed, chunked, and embedded with an embedding model. The resulting vectors capture the semantic meaning of the text.
 2. When a user asks a question, the question is embedded into the same vector space and the most relevant chunks are retrieved by semantic similarity.
 
-![rag_image_1](images/rag_image_1.png)
+![rag_image_1](assets/rag_image_1.png)
 
 3. The retrieved passages are appended to the prompt, augmenting the user’s query with additional context for the model.
 4. The large language model (LLM) then generates a response grounded in both the user’s question and the retrieved context.
@@ -48,10 +48,10 @@ Browse Hugging Face to find and download models appropriate for your task.
  > 🤗 Huggingface: https://huggingface.co/models
 
 This RAG system runs locally, and both the embedding model and LLM are configured via `config.yaml`.
-
+exam:
 ```yaml
-embed_model: "sentence-transformers/all-MiniLM-L6-v2"
-llm: "mistralai/Mistral-7B-Instruct-v0.1"
+embed_model: "jhgan/ko-sroberta-multitask"
+llm: "kakaocorp/kanana-1.5-2.1b-instruct-2505"
 ```
 
 
