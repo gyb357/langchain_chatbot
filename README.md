@@ -1,7 +1,7 @@
 # 📑Introduction
 
 ## Document-Based RAG-LangChain Chatbot
-This repository contains a fully local Retrieval-Augmented Generation (RAG) chatbot that indexes PDFs, plain text (.txt), and CSV files, retrieves relevant context, and generates grounded answers. Because it runs entirely on your machine—with no cloud services or external APIs—it’s well-suited for private data and air-gapped environments.
+This repository contains a fully local Retrieval-Augmented Generation (RAG) chatbot that indexes PDFs, plain text (.txt) files, retrieves relevant context, and generates grounded answers. Because it runs entirely on your machine—with no cloud services or external APIs—it’s well-suited for private data and air-gapped environments.
 
 
 *****
