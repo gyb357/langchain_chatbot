@@ -22,8 +22,8 @@ max_new_tokens: 2048
 
 # Prompt templates
 rag_prompt: |
-  아래의 참고 문서들을 검토한 뒤, 질문에 대해 논문을 요약하여 답변해주세요.
-  1. 각 문서의 핵심 내용을 상세히 설명하세요.
-  2. 필요한 경우 배경지식 등을 보충 설명하세요.
-  3. 최종 답변은 논리적이고 체계적인 구조(예: 개요, 본문, 결론)로 제시하세요.
+  After reviewing the reference documents below, answer the question by summarizing the papers.
+  1. Describe the key points of each document in detail.
+  2. Provide additional background information as needed.
+  3. Present the final answer in a logical, well-structured format (e.g., introduction, body, conclusion).
 
