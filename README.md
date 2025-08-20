@@ -48,18 +48,9 @@ Browse Hugging Face to find and download models appropriate for your task.
 This RAG system runs locally, and both the embedding model and LLM are configured via `config.yaml`.
 exam:
 ```yaml
-embed_model: "jhgan/ko-sroberta-multitask"
-llm: "kakaocorp/kanana-1.5-2.1b-instruct-2505"
-
+embed_model: "Embed model"
+llm: "LLM name"
 rag_prompt: "Your custom prompt"
-```
-
-```yaml
-rag_prompt: |
-  After reviewing the reference documents below, answer the question by summarizing the papers.
-  1. Describe the key points of each document in detail.
-  2. Provide additional background information as needed.
-  3. Present the final answer in a logical, well-structured format (e.g., introduction, body, conclusion).
 ```
 
 
