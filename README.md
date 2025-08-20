@@ -54,13 +54,13 @@ llm: "kakaocorp/kanana-1.5-2.1b-instruct-2505"
 rag_prompt: "Your custom prompt"
 ```
 
-'''bash
+```yaml
 rag_prompt: |
   After reviewing the reference documents below, answer the question by summarizing the papers.
   1. Describe the key points of each document in detail.
   2. Provide additional background information as needed.
   3. Present the final answer in a logical, well-structured format (e.g., introduction, body, conclusion).
-'''
+```
 
 
 ## 4. Add Your Documents
