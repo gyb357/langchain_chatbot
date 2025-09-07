@@ -2,8 +2,8 @@
 device: "cuda" # "cpu"
 
 # Embedding model and LLM
-embed_model: "jhgan/ko-sroberta-multitask"
-llm: "kakaocorp/kanana-1.5-2.1b-instruct-2505"
+embed_model: ""
+llm: ""
 
 # Paths
 documents_path: "./documents"
@@ -20,7 +20,7 @@ chunk_overlap: 100
 temperature: 0.1
 max_new_tokens: 2048
 
-# Prompt templates
+# Prompt templates (exam)
 rag_prompt: |
   After reviewing the reference documents below, answer the question by summarizing the papers.
   1. Describe the key points of each document in detail.
